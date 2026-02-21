@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="bilder_t3/tab_logo.svg" />
+  <title>Trikots | Olympique de Marseille</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="trikot-page">
+  <header>
+    <div class="header-left">
+      <button id="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    <div class="header-left">
+      <nav id="nav-links" class="nav-links">
+        <a href="teil3.html">Home</a>
+        <a href="spielplan.html">Spiele</a>
+        <a href="kader.html">Kader</a>
+        <a href="geschichte.html">Geschichte</a>
+        <a href="trikot.html" class="active">Trikots</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="../index.html">Übersicht</a>
+      </nav>
+    </div>
+    <div class="logo">
+      <img src="bilder_t3/om_logo.png" alt="Olympique Marseille Logo" />
+    </div>
+  </header>
+
+  <main>
+  <h1>Trikots der letzten 5 Jahre</h1>
+
+  <!-- Saison-Auswahl -->
+  <div class="season-select">
+    <select id="seasonSelect">
+      <option value="0">Saison 2025/26</option>
+      <option value="1">Saison 2024/25</option>
+      <option value="2">Saison 2023/24</option>
+      <option value="3">Saison 2022/23</option>
+      <option value="4">Saison 2021/22</option>
+    </select>
+  </div>
+
+  <!-- Zwei Bereiche: Feldspieler & Torwart -->
+  <div class="trikot-view">
+    <!-- Feldspieler -->
+    <div class="trikot-box">
+      <h2>Feldspieler</h2>
+      <div class="image-container">
+        <button class="img-btn left" id="prevField">&#8592;</button>
+        <img id="fieldImg" src="bilder_t3/trikots/heim_2025.png" alt="Feldspieler-Trikot" />
+        <button class="img-btn right" id="nextField">&#8594;</button>
+      </div>
+      <p id="fieldLabel">Heimtrikot</p>
+    </div>
+
+    <!-- Torwart -->
+    <div class="trikot-box">
+      <h2>Torwart</h2>
+      <div class="image-container">
+        <button class="img-btn left" id="prevKeeper">&#8592;</button>
+        <img id="keeperImg" src="bilder_t3/trikots/tor1_2025.png" alt="Torwart-Trikot" />
+        <button class="img-btn right" id="nextKeeper">&#8594;</button>
+      </div>
+      <p id="keeperLabel">Torwarttrikot 1</p>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <button id="impressumBtn">Impressum</button>
+  </footer>
+
+  <div id="impressumPopup" class="popup">
+    <div class="popup-content">
+      <h2>Impressum</h2>
+      <p>
+        Olympique de Marseille<br />
+        Stade Vélodrome<br />
+        3 Boulevard Michelet<br />
+        13008 Marseille, Frankreich<br />
+        E-Mail: info@om.fr
+      </p>
+      <button id="closePopup">Schliessen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

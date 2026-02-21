@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html data-lt-installed="true">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage">
+
+    <!-- Sidebar on click -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+        <a href="./index.html#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="./index.html#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="./index.html#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="./index.html#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="./index.html#" class="w3-bar-item w3-button">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="./teil2.html" class="w3-bar-item w3-button w3-teal">
+            <img src="bilder_t2/cl_logo.jpg" alt="Logo" style="height:30px; vertical-align:middle; margin-right:8px;"></a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+            <a href="#cl" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Champions League</a>
+            <a href="#sitzplatz" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sitzplätze</a>
+            <a href="#kontakt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Kontakt</a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Übersicht</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+
+            <button class="w3-button" title="Clubs">Clubs <i class="fa fa-caret-down"></i></button>
+             <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+            <a href="https://www.liverpoolfc.com/" target="_blank" class="w3-bar-item w3-button">Liverpool</a>
+            <a href="https://www.fcbarcelona.com/" target="_blank" class="w3-bar-item w3-button">Barcelona</a>
+             <a href="https://www.inter.it/en" target="_blank" class="w3-bar-item w3-button">Inter</a>
+    </div>
+</div>
+            </div>
+            <a href="./index.htm#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#team" class="w3-bar-item w3-button">Team</a>
+            <a href="#cl" class="w3-bar-item w3-button">Champions League</a>
+            <a href="#sitzplatz" class="w3-bar-item w3-button">Sitzplätze</a>
+            <a href="#kontakt" class="w3-bar-item w3-button">Kontakt</a>
+            <a href="./index.html#" class="w3-bar-item w3-button">Suchen</a>
+            <a href="https://inf-293-24h-m293user10.iet-gibb.net/t2_m293/index.html" class="w3-bar-item w3-button">Übersicht</a>
+        </div>
+    </div>
+
+    <!-- Image Header -->
+    <div class="w3-display-container w3-animate-opacity">
+        <img src="bilder_t2/cl_stadion.jpg" alt="Champions League" style="width:100%;min-height:350px;max-height:600px;">
+        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+            <button onclick="document.getElementById('id01').style.display='block'"> Infos</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-teal w3-display-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h4>Hier ist die Geschichte der heutigen Champions League</h4>
+            <h5>Dies ist nur ein kurzer Einblick <i class="fa fa-smile-o"></i></h5>
+        </header>
+
+        <div class="w3-container">
+            <p>Die UEFA Champions League hat ihren Ursprung im Jahr 1955, als der Europapokal der Landesmeister ins Leben gerufen wurde, um die besten Fußballvereine Europas gegeneinander antreten zu lassen. Anfangs nahmen nur die Meister der nationalen Ligen teil, doch im Laufe der Jahre wurde der Wettbewerb ausgeweitet und umstrukturiert. 1992 entstand die heutige Champions League mit Gruppenphase und erweiterten Teilnehmerfeldern, wodurch der Wettbewerb noch spannender und attraktiver wurde.
+                Berühmte Vereine wie Real Madrid, AC Mailand und FC Barcelona prägten die Geschichte mit legendären Siegen und unvergesslichen Spielen. Spieler wie Cristiano Ronaldo, Lionel Messi und Zinedine Zidane schrieben in diesem Turnier Fußballgeschichte. Die Champions League ist heute nicht nur sportlich bedeutend, sondern auch ein globales Ereignis, das Millionen von Fans weltweit begeistert.
+            </p>
+            <p>Mehr Infos findest du auf der <a class="w3-text-teal" href="https://www.uefa.com/uefachampionsleague/" target="_blank">offiziellen Champions League Seite</a>.</p>
+        </div>
+        <footer class="w3-container w3-teal">
+            <p>Geschichte CL</p>
+        </footer>
+    </div>
+</div>
+
+
+    <!-- Team Container -->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+        <h2>TEAM</h2>
+        <p>Champions League Team - die wichtigsten Personen:</p>
+
+        <div class="w3-row"><br>
+
+            <div class="w3-quarter">
+                <img src="bilder_t2/gianni.jpg" alt="Gianni Infantino" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Gianni Infantino</h3>
+                <p>FIFA Präsident</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="bilder_t2/aleksander.jpg" alt="Aleksander Ceferin" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Aleksander Ceferin</h3>
+                <p>UEFA Präsident</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="bilder_t2/theodore.jpg" alt="Theodore Theodoridis" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Theodore Theodoridis</h3>
+                <p>Generalsekretär der UEFA</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="bilder_t2/gabriele.jpg" alt="Gabreiele Gravina" style="width:45%" class="w3-circle w3-hover-opacity">
+                <h3>Gabreiele Gravina</h3>
+                <p>UEFA Vizepräsident</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="cl">
+
+        <div class="w3-quarter">
+            <h2>Champions League</h2>
+            <p>Die UEFA Champion League ist der wichtigste Vereinswettbewerb im europäischen Fussbal, an dem die stärksten Teams aus den nationalen Ligen teilnehmen. Jedes Jahr kämpfen Spitzenvereine darum, die begehrte Trophäe zu gewinnen und ihren Namen in die Geschichte einzutragen. Neben sportlicher Qualität sorgt das Turnier für große Emotionen, spannende Begegnungen und unvergessliche Momente. Millionen Fans weltweit verfolgen die Spiele, die nicht nur Fussbal, sondern auch ein internationales Kulturereignis darstellen. Die Champion League vereint Tradition, Leidenschaft und Rivalität auf hoechstem Niveau.</p>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="bilder_t2/liverpool.png" alt="Liverpool" style="width:100%">
+                <div class="w3-container">
+                    <h3>Liverpool FC</h3>
+                    <h4>England, Premier League</h4>
+                    <p>6x Champions-League-Sieger</p>
+                    <p>Gegründet 1892</p>
+                    <p>Stadion: Anfield</p>
+                    <p>Bekannter Spieler: Mo Salah</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="bilder_t2/barca.png" alt="Barca" style="width:100%">
+                <div class="w3-container">
+                    <h3>FC Barcelona</h3>
+                    <h4>Spanien, La Liga</h4>
+                    <p>5x Champions-League-Sieger</p>
+                    <p>Gegründet 1899</p>
+                    <p>Stadion: Camp Nou</p>
+                    <p>Legende: Lionel Messi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-white">
+                <img src="bilder_t2/inter.png" alt="Inter" style="width:100%">
+                <div class="w3-container">
+                    <h3>Inter Milan</h3>
+                    <h4>Italien, Serie A</h4>
+                    <p>3x Champions-League-Sieger</p>
+                    <p>Gegründet 1908</p>
+                    <p>Stadion: San Siro</p>
+                    <p>Starspieler: Lautaro Martínez</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Container -->
+    <div class="w3-container" style="position:relative">
+        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
+    </div>
+
+    <!-- Pricing Row -->
+    <div class="w3-row-padding w3-center w3-padding-64" id="sitzplatz">
+        <h2>Sitzplätze</h2>
+        <p>Wähle einen der folgenden Plätze aus</p><br>
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme">
+                    <p class="w3-xlarge">Standart</p>
+                </li>
+                <li class="w3-padding-16"><b>Sitzplatz:</b>Normaler</li>
+                <li class="w3-padding-16"><b>Zugang:</b> Fanzone</li>
+                <li class="w3-padding-16"><b>Inklusive:</b> Programmheft</li>
+                <li class="w3-padding-16"><b>Anzahl Plätze:</b> 60'000</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 30</h2>
+                    <span class="w3-opacity">pro Platz</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Kaufen</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme-l2">
+                    <p class="w3-xlarge">Premium</p>
+                </li>
+                <li class="w3-padding-16"><b>Sitzplatz:</b> gepolstert</li>
+                <li class="w3-padding-16"><b>Zugang:</b> Fanzone und Premium Lounge</li>
+                <li class="w3-padding-16"><b>Inklusive:</b> Programmheft und Getränke</li>
+                 <li class="w3-padding-16"><b>Anzahl Plätze:</b> 2'000</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 200</h2>
+                    <span class="w3-opacity">pro Platz</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Kaufen</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme">
+                    <p class="w3-xlarge">VIP</p>
+                </li>
+                <li class="w3-padding-16"><b>Sitzplatz:</b> gepolstert</li>
+                <li class="w3-padding-16"><b>Zugang:</b> Fanzone und VIP Lounge</li>
+                <li class="w3-padding-16"><b>Inklusive:</b> Programmheft, Essen und Trinken</li>
+                <li class="w3-padding-16"><b>Spezial:</b> Treffen mit Spieler</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 1500</h2>
+                    <span class="w3-opacity">pro Platz</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Kaufen</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="kontakt">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Kontaktiere uns</span></div>
+                <h3>Adresse</h3>
+                <p>Papiermühlenstrasse 67</p>
+                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Bern, CH</p>
+                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+14 067 481 67 67</p>
+                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;test@test.com</p>
+            </div>
+            <div class="w3-col m7">
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://www.w3schools.com/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input" type="text" name="Name" required="">
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input" type="text" name="Email" required="">
+                    </div>
+                    <div class="w3-section">
+                        <label>Nachricht</label>
+                        <input class="w3-input" type="text" name="Message" required="">
+                    </div>
+                    <input class="w3-check" type="checkbox" checked="" name="Like">
+                    <label>I Like it!</label>
+                    <button type="submit" class="w3-button w3-right w3-theme">Senden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Google Maps Embed für BWD Bildungszentrum -->
+<div class="w3-container w3-padding-64">
+    <h3>Unser Standort: BWD Bildungszentrum für Wirtschaft und Dienstleistungen</h3>
+    <div style="width:100%; height:400px;">
+        <iframe 
+            src="https://www.google.com/maps?q=BWD+Bildungszentrum+für+Wirtschaft+und+Dienstleistungen,+Bern,+Switzerland&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Follow Us</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/ChampionsLeague" target="_blank" title="Facebook">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a class="w3-button w3-large w3-teal" href="https://twitter.com/ChampionsLeague" target="_blank" title="Twitter">
+        <i class="fa fa-twitter"></i>
+    </a>
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/championsleague/" target="_blank" title="Instagram">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/company/uefa/" target="_blank" title="LinkedIn">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+    <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+        <a class="w3-button w3-theme" href="./teil2.html#"><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+
+
+    <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+
+    <span style="border-radius: 10px !important; text-indent: 12px !important; width: auto !important; height: 20px !important; padding: 0px 8px !important; text-align: center !important; vertical-align: middle !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 10px; left: 10px;">Merken</span>
+    <span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 10px; left: 1871px;"></span>
+</body>
+
+</html>

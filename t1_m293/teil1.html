@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Webseite</title>
+  <link rel="stylesheet" href="style_T1.css">
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen auf meiner Webseite</h1>
+    <nav>
+      <a href="#about">Modul 293</a> |
+      <a href="#liste">Über mich</a> |
+      <a href="#tabelle">Familie</a> |
+      <a href="#kontakt">Kontakt</a> |
+      <a href="../index.html">Übersicht</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <article>
+      <h2>Modul 293</h2>
+      <p>Diese Webseite ist der erste Teil des Modul 293.</p>
+      <p>Sie dient dazu, meine Fähigkeiten in HTML und CSS zuverbessern.</p>
+    </article>
+  </section>
+
+  <section id="liste">
+    <h2>Über mich</h2>
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Unihockey</li>
+      <li>Fussball</li>
+      <li>Musik</li>
+    </ul>
+
+    <h3>Meine Ziele</h3>
+    <ol>
+      <li>HTML lernen</li>
+      <li>CSS anwenden</li>
+      <li>Webseite veröffentlichen</li>
+    </ol>
+
+    <h3>Bilder</h3>
+      <img src="meinBild.jpg" alt="ein Bild von mir" width="250" height="300">
+      <img src="hamburg.jpg" alt="ein Bild von Hamburg" width="250" height="300">
+      <img src="wankdorf.jpg" alt="ein Bild vom Stadion Wankdorf" width="250" height="300">
+
+  </section>
+
+  <section id="tabelle">
+    <h2>Familie</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Familienstatus</th>
+        <th>Beruf</th>
+      </tr>
+      <tr>
+        <td>Thibaud</td>
+        <td>Bruder</td>
+        <td>PH-Student</td>
+      </tr>
+      <tr>
+        <td>Gabriela</td>
+        <td>Mutter</td>
+        <td>Lehrerin</td>
+      </tr>
+      <tr>
+        <td> Patrick</td>
+        <td>Vater</td>
+        <td>Lehrer</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontaktformular</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">E-Mail:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="nachricht">Nachricht:</label><br>
+      <textarea id="nachricht" name="nachricht"></textarea><br><br>
+
+      <button type="submit">Absenden</button>
+      <button type="reset">Zurücksetzen</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Webseite von Etienne Schwab</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="bilder_t3/tab_logo.svg" />
+  <title>Kontakt | Olympique de Marseille</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="kontakt-page">
+  <header>
+    <div class="header-left">
+      <button id="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    <div class="header-left">
+      <nav id="nav-links" class="nav-links">
+        <a href="teil3.html">Home</a>
+        <a href="spielplan.html">Spiele</a>
+        <a href="kader.html">Kader</a>
+        <a href="geschichte.html">Geschichte</a>
+        <a href="trikot.html">Trikots</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="../index.html">Übersicht</a>
+      </nav>
+    </div>
+    <div class="logo">
+      <img src="bilder_t3/om_logo.png" alt="Olympique Marseille Logo" />
+    </div>
+  </header>
+
+  <main class="kontakt">
+    <h1>Kontaktformular</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Ihr Name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" placeholder="Ihre E-Mail" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" rows="5" placeholder="Ihre Nachricht"></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </main>
+
+  <footer>
+    <button id="impressumBtn">Impressum</button>
+  </footer>
+
+  <div id="impressumPopup" class="popup">
+    <div class="popup-content">
+      <h2>Impressum</h2>
+      <p>
+        Olympique de Marseille<br />
+        Stade Vélodrome<br />
+        3 Boulevard Michelet<br />
+        13008 Marseille, Frankreich<br />
+        E-Mail: info@om.fr
+      </p>
+      <button id="closePopup">Schliessen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

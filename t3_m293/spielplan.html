@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="bilder_t3/tab_logo.svg" />
+  <title>Spielplan | Olympique de Marseille</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="spiele-page">
+  <header>
+  <div class="header-left">
+    <button id="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-links" class="nav-links">
+      <a href="teil3.html">Home</a>
+      <a href="spielplan.html" class="active">Spiele</a>
+      <a href="kader.html">Kader</a>
+      <a href="geschichte.html">Geschichte</a>
+      <a href="trikot.html">Trikots</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="../index.html">Übersicht</a>
+    </nav>
+  </div>
+  <div class="logo">
+    <img src="bilder_t3/om_logo.png" alt="Olympique Marseille Logo" />
+  </div>
+</header>
+
+
+  <main>
+    <div class="text-box"><h1>Spielplan</h1></div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-target="previous">Vorherige Spiele</button>
+      <button class="tab" data-target="upcoming">Kommende Spiele</button>
+      <button class="tab" data-target="table">Tabelle</button>
+    </div>
+
+    <!-- Inhalt: Vorherige Spiele -->
+    <div id="previous" class="tab-content active">
+      <!-- Suche für vergangene Spiele -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Suche Gegner...">
+      </div>
+
+      <div class="game-container">
+        <div class="game-box">
+          <h3>OM vs Angers</h3>
+          <p>29.10.25</p>
+          <span class="score">2 : 2</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Lens vs OM</h3>
+          <p>25.10.25</p>
+          <span class="score" style="background-color: red;">2 : 1</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Sporting vs OM</h3>
+          <p>22.10.25</p>
+          <span class="score" style="background-color: red;">2 : 1</span>
+          <p class="competition">Champions League</p>
+        </div>
+        <div class="game-box">
+          <h3>OM vs Le HAC</h3>
+          <p>18.10.25</p>
+          <span class="score" style="background-color: green;">6 : 2</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Metz vs OM</h3>
+          <p>04.10.25</p>
+          <span class="score" style="background-color: green;">0 : 3</span>
+          <p class="competition">Champions League</p>
+        </div>
+        <div class="game-box">
+          <h3>OM vs Ajax</h3>
+          <p>30.09.25</p>
+          <span class="score" style="background-color: green;">4 : 0</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Strasbourg vs OM</h3>
+          <p>26.09.25</p>
+          <span class="score" style="background-color: green;">1 : 2</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>OM vs PSG</h3>
+          <p>22.09.25</p>
+          <span class="score" style="background-color: green;">1 : 0</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Real Madrid vs OM</h3>
+          <p>16.09.25</p>
+          <span class="score" style="background-color: red;">2 : 1</span>
+          <p class="competition">Champions League</p>
+        </div>
+        <div class="game-box">
+          <h3>OM vs Lorient</h3>
+          <p>12.09.25</p>
+          <span class="score" style="background-color: green;">4 : 0</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Lyon vs OM</h3>
+          <p>31.08.25</p>
+          <span class="score" style="background-color: red;">1 : 0</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>OM vs PFC</h3>
+          <p>23.08.25</p>
+          <span class="score" style="background-color: green;">5 : 2</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+        <div class="game-box">
+          <h3>Rennes vs OM</h3>
+          <p>15.08.25</p>
+          <span class="score" style="background-color: red;">1 : 0</span>
+          <p class="competition">Ligue 1</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inhalt: Kommende Spiele -->
+<div id="upcoming" class="tab-content">
+  <!-- Suche für kommende Spiele -->
+  <div class="search-container">
+    <input type="text" id="searchInputUpcoming" placeholder="Suche Gegner...">
+  </div>
+
+  <div class="game-container">
+    <!-- Ligue 1 -->
+    <div class="game-box">
+      <h3>OM vs AS Monaco</h3>
+      <p>14. Dezember 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs FC Nantes</h3>
+      <p>4. Januar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Angers SCO vs OM</h3>
+      <p>18. Januar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs RC Lens</h3>
+      <p>25. Januar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Paris FC vs OM</h3>
+      <p>1. Februar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Paris Saint‑Germain vs OM</h3>
+      <p>8. Februar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs RC Strasbourg</h3>
+      <p>15. Februar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Stade Brestois 29 vs OM</h3>
+      <p>22. Februar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs Olympique Lyonnais</h3>
+      <p>1. März 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Toulouse FC vs OM</h3>
+      <p>8. März 2026</p>
+      <span class="vs">vs</span>
+    </div>
+
+    <!-- Champions League -->
+    <div class="game-box">
+      <h3>Real Madrid CF vs OM</h3>
+      <p>16. September 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs AFC Ajax</h3>
+      <p>30. September 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Sporting Clube de Portugal vs OM</h3>
+      <p>22. Oktober 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs Atalanta BC</h3>
+      <p>5. November 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs Newcastle United FC</h3>
+      <p>25. November 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>R. Union Saint‑Gilloise vs OM</h3>
+      <p>9. Dezember 2025</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>OM vs Liverpool FC</h3>
+      <p>21. Januar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+    <div class="game-box">
+      <h3>Club Brugge KV vs OM</h3>
+      <p>28. Januar 2026</p>
+      <span class="vs">vs</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Suche für kommende Spiele
+  const searchInputUpcoming = document.getElementById('searchInputUpcoming');
+  const upcomingGames = document.querySelectorAll('#upcoming .game-box');
+
+  searchInputUpcoming.addEventListener('input', function() {
+    const filter = searchInputUpcoming.value.toLowerCase();
+    upcomingGames.forEach(game => {
+      const opponent = game.querySelector('h3').textContent.toLowerCase();
+      if (opponent.includes(filter)) {
+        game.style.display = '';
+      } else {
+        game.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+    <!-- Inhalt: Tabelle -->
+    <div id="table" class="tab-content">
+      <table class="league-table">
+        <thead>
+          <tr>
+            <th>Platz</th>
+            <th>Verein</th>
+            <th>Spiele</th>
+            <th>Punkte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>PSG</td><td>10</td><td>21</td></tr>
+          <tr><td>2</td><td>Monaco</td><td>10</td><td>20</td></tr>
+          <tr class="om-tabelle"><td>3</td><td>Marseille</td><td>10</td><td>19</td></tr>
+          <tr><td>4</td><td>Strasbourg</td><td>10</td><td>19</td></tr>
+          <tr><td>5</td><td>Lyon</td><td>10</td><td>19</td></tr>
+          <tr><td>6</td><td>Lens</td><td>10</td><td>19</td></tr>
+          <tr><td>7</td><td>LOSC</td><td>10</td><td>17</td></tr>
+          <tr><td>8</td><td>OGC Nizza</td><td>10</td><td>17</td></tr>
+          <tr><td>9</td><td>Toulouse</td><td>10</td><td>14</td></tr>
+          <tr><td>10</td><td>Rennes</td><td>10</td><td>12</td></tr>
+          <tr><td>11</td><td>Le HAC</td><td>10</td><td>12</td></tr>
+          <tr><td>12</td><td>PFC</td><td>10</td><td>11</td></tr>
+          <tr><td>13</td><td>Angers</td><td>10</td><td>10</td></tr>
+          <tr><td>14</td><td>Brest</td><td>10</td><td>9</td></tr>
+          <tr><td>15</td><td>Nantes</td><td>10</td><td>9</td></tr>
+          <tr><td>16</td><td>Lorient</td><td>10</td><td>9</td></tr>
+          <tr><td>17</td><td>Auxerre</td><td>10</td><td>7</td></tr>
+          <tr><td>18</td><td>Metz</td><td>10</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <button id="impressumBtn">Impressum</button>
+  </footer>
+
+  <div id="impressumPopup" class="popup">
+    <div class="popup-content">
+      <h2>Impressum</h2>
+      <p>
+        Olympique de Marseille<br />
+        Stade Vélodrome<br />
+        3 Boulevard Michelet<br />
+        13008 Marseille, Frankreich<br />
+        E-Mail: info@om.fr
+      </p>
+      <button id="closePopup">Schliessen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Suche nach Gegnern in vergangenen Spielen
+    const searchInput = document.getElementById('searchInput');
+    const previousGames = document.querySelectorAll('#previous .game-box');
+
+    searchInput.addEventListener('input', function() {
+      const filter = searchInput.value.toLowerCase();
+      previousGames.forEach(game => {
+        const opponent = game.querySelector('h3').textContent.toLowerCase();
+        if (opponent.includes(filter)) {
+          game.style.display = '';
+        } else {
+          game.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

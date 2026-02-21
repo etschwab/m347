@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="bilder_t3/tab_logo.svg" />
+  <title>Olympique de Marseille</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts für OM Website -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="start-page">
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <button id="menu-toggle" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="teil3.html" class="active">Home</a>
+        <a href="spielplan.html">Spiele</a>
+        <a href="kader.html">Kader</a>
+        <a href="geschichte.html">Geschichte</a>
+        <a href="trikot.html">Trikots</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="../index.html">Übersicht</a>
+      </nav>
+    </div>
+
+    <div class="logo">
+      <img src="bilder_t3/om_logo.png" alt="Olympique Marseille Logo" />
+    </div>
+  </header>
+
+  <!-- Hauptbereich -->
+  <main>
+    <div class="text-box">
+    <h1>Bienvenue à l’Olympique de Marseille</h1>
+    <p>Willkommen auf der offiziellen Fanseite von Olympique Marseille!</p>
+  </div>
+
+   <section class="box-container">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/olympiquedemarseille/" 
+     target="_blank" rel="noopener noreferrer" class="box">
+    <img src="bilder_t3/insta.webp" alt="Instagram" />
+    <h3>Instagram</h3>
+  </a>
+
+  <!-- Letztes Spiel -->
+  <a href="spielplan.html" 
+     target="_blank" rel="noopener noreferrer" class="box">
+    <img src="bilder_t3/sieg.webp" alt="Letztes Spiel" />
+    <h3>Letztes Spiel</h3>
+  </a>
+
+  <!-- Highlights -->
+  <a href="https://www.youtube.com/user/OM" 
+     target="_blank" rel="noopener noreferrer" class="box">
+    <img src="bilder_t3/yt.jpg" alt="Highlights" />
+    <h3>Highlights</h3>
+  </a>
+
+  <!-- Erfolge -->
+<a href="geschichte.html#erfolge" class="box erfolge-link">
+  <img src="bilder_t3/cl.avif" alt="Erfolge" />
+  <h3>Erfolge</h3>
+</a>
+
+  <!-- Shop -->
+  <a href="https://boutique.om.fr/" 
+     target="_blank" rel="noopener noreferrer" class="box">
+    <img src="bilder_t3/trikot.webp" alt="Shop" />
+    <h3>Shop</h3>
+  </a>
+  </section>
+
+<!-- Google Maps Stade Vélodrome -->
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3536706765326!2d5.3959015!3d43.269859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b8a778a71c19%3A0xf30ae56cc3f4dc1e!2sStade%20V%C3%A9lodrome!5e0!3m2!1sde!2sfr!4v1698744185472!5m2!1sde!2sfr"
+    width="100%" 
+    height="500" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <button id="impressumBtn">Impressum</button>
+  </footer>
+
+  <!-- Impressum Popup -->
+  <div id="impressumPopup" class="popup">
+    <div class="popup-content">
+      <h2>Impressum</h2>
+      <p>
+        Olympique de Marseille<br />
+        Stade Vélodrome, 3 Bd Michelet<br />
+        13008 Marseille, Frankreich<br />
+        E-Mail: info@om.fr
+      </p>
+      <button id="closePopup">Schliessen</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

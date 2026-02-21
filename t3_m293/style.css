@@ -1,0 +1,796 @@
+/* =========================================================
+=== OLYMPIQUE DE MARSEILLE - STYLE.CSS ===
+========================================================= */
+
+/* === GRUNDLAYOUT === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #003366;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/* === HINTERGRUND BILDER PRO SEITE === */
+.start-page {
+  background: url("bilder_t3/stadion.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.spiele-page {
+  background: url("bilder_t3/stadion.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.kader-page {
+  background: url("bilder_t3/teamtraining.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.trikot-page {
+  background: url("bilder_t3/trikot_2024.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.geschichte-page {
+  background: url("bilder_t3/om_geschichte.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.kontakt-page {
+  background: url("bilder_t3/om_city.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-box {
+  background: rgba(0, 159, 227, 0.98);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* === HEADER === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  background-color: #009fe3;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* === LOGO === */
+.logo {
+  display: block; /* Logo immer sichtbar auf Desktop */
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo img {
+  height: 65px;
+}
+
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+/* === NAVIGATION === */
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 19px; /* feste Größe, keine Veränderung beim Hover */
+  transition: color 0.3s ease; /* nur Farbe animieren */
+}
+
+.nav-links a:hover {
+  color: #ffe600; /* Farbe beim Hover ändern */
+}
+
+.nav-links a.active {
+  border-bottom: 3px solid white; /* aktive Seite markieren */
+}
+
+/* === BURGER BUTTON === */
+.menu-btn {
+  display: none; /* Standard Desktop: versteckt */
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 159, 227, 0.9);
+  padding: 8px;
+  border-radius: 8px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 4001;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animation zu X */
+.menu-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* === MAIN === */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;  /* Höhe Header + Abstand */
+  padding-bottom: 70px; /* Höhe Footer + Abstand */
+  flex: 1;
+}
+
+/* === BOXEN (Startseite) === */
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 80px 20px;
+}
+
+/* ===============================
+   KADER-SEITEN SPEZIFISCH
+   =============================== */
+
+/* Box-Titel über den Spielern */
+.box-container h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+.sturm-bg {
+  background-color: #0070c0; /* Marseille-Blau */
+  color: white;
+  width: 100vw;       /* volle Breite des Viewports */
+  padding: 80px 20px; /* oben/unten Abstand, links/rechts Padding */
+  margin: 0;          /* keine Standard-Abstände */
+  box-sizing: border-box;
+}
+
+/* Torwart und Mittelfeld: kein Hintergrund */
+.torwart-bg,
+.mittelfeld-bg {
+  background-color: transparent;
+}
+
+/* Verteidigung und Sturm: Marseille-Blau */
+.verteidigung-bg,
+.sturm-bg {
+  background-color: #0070c0; /* Marseille-Blau */
+  color: white;
+}
+
+/* Boxen in Verteidigung und Sturm */
+.verteidigung-bg .box,
+.sturm-bg .box {
+  background-color: white;
+  color: #003366;
+}
+
+/* Hover für Kader-Boxen: nur Farbe ändern, keine Vergrößerung */
+.kader-page .box:hover {
+  transform: none; /* keine Skalierung */
+  width: 220px; /* gleiche Breite wie Standard */
+  background-color: #009fe3; /* Farbe beim Hover */
+  color: white;
+}
+
+
+/* === BOX CLICK EFFECT === */
+.box h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #003366;
+  background: transparent;
+  border-radius: 10px;
+  padding: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.box.clicked h3 {
+  background-color: #009fe3;
+  color: white;
+}
+
+.box {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  width: 250px;
+  background-color: #009fe3;
+  color: white;
+}
+
+.box img {
+  width: 70%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.box h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #003366;
+}
+
+/* === TEXTSEITEN === */
+.text-page {
+  padding: 60px;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+/* === TRIKOT SEITE === */
+.trikot-box {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.trikot-box img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+select {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #009fe3;
+}
+
+/* === KONTAKT === */
+.kontakt {
+  max-width: 500px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.kontakt form {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt label {
+  margin: 10px 0 5px;
+}
+
+.kontakt input,
+.kontakt textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.kontakt button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #009fe3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.kontakt button:hover {
+  background: #007bbd;
+}
+
+/* === FOOTER === */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  z-index: 3000;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* === POPUP === */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* === SPIELE SEITE === */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 2px solid #009fe3;
+  background: white;
+  color: #009fe3;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  background: #009fe3;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  text-align: center;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* === SPIELPLAN BOXEN === */
+.game-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.game-box {
+  background: white;
+  width: 220px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.game-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.game-box h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.game-box p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.score,
+.vs {
+  display: inline-block;
+  background: #009fe3;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* === TABELLE === */
+.league-table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.league-table th,
+.league-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.league-table th {
+  background: #009fe3;
+  color: white;
+}
+
+.league-table tr:hover {
+  background: #f2f2f2;
+}
+
+
+/* Marseille-Zeile hervorheben (Farben invertieren) */
+.om-tabelle {
+  background-color: #009fe3 !important; /* OM-Blau */
+  color: white !important;
+  font-weight: bold;
+}
+
+.om-tabelle td {
+  border-bottom: 2px solid white; /* etwas Kontrast */
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  /* Header (Navigationsbalken) deutlich höher machen */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #009fe3;
+    padding: 30px 40px; /* ← vorher 30px, jetzt richtig hoch */
+    z-index: 4000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Burger-Button auf Handy anzeigen */
+  .menu-btn {
+    display: flex;
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    z-index: 4001;
+  }
+
+  /* Navigation mobil */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 159, 227, 0.98);
+    z-index: 4000;
+    text-align: center;
+    gap: 25px;
+    font-size: 22px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* Logo mobil – sitzt jetzt sauber IM Balken */
+  .logo {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 4002;
+  }
+
+  .logo img {
+    height: 55px; /* leicht größer, optional */
+  }
+
+  /* Abstand für Inhalt */
+  main {
+    padding-top: 150px; /* mehr Platz oben, da Header höher ist */
+  }
+}
+
+.search-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#searchInput {
+  padding: 8px 12px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Suche für Spiele */
+.search-container {
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: #0072ce; /* deine Hauptfarbe */
+  box-shadow: 0 2px 8px rgba(0,114,206,0.3);
+}
+
+
+.trikot-view {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.trikot-box {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 300px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trikot-box img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.img-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.img-btn:hover {
+  background: #005fa3;
+}
+
+.img-btn.left {
+  left: -20px;
+}
+
+.img-btn.right {
+  right: -20px;
+}
+
+.trikot-box p {
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.season-select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Optional: sanfte Überblendung beim Bildwechsel */
+.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ======================= ERFOLGE-BEREICH (bereinigt) ======================= */
+.erfolge {
+  width: 100%;
+  background-color: #009fe3; /* OM-Blau */
+  padding: 60px 20px;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  position: relative;
+  z-index: 10; /* damit Hintergrund über main sichtbar ist */
+}
+
+.erfolge h2 {
+  font-size: 2.4rem;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Layout der Boxen */
+.erfolge-boxen {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+/* Jede Box (weiß auf blauem Hintergrund) */
+.erfolge-boxen .box {
+  background: #ffffff;
+  color: #003366;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 25px 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.6s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+}
+
+/* Bilder in den Boxen */
+.erfolge-boxen .box img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Nur der Ligue 1 Pokal größer */
+.erfolge-boxen .box img[alt="Ligue 1 Pokal"] {
+  width: 160px;
+}
+
+/* Titel innerhalb Boxen (einheitliche Höhe) */
+.erfolge-boxen .box h3 {
+  font-size: 1.15rem;
+  margin: 10px 0 6px 0;
+  color: #003366;
+  min-height: 1.4em; /* sorgt dafür, dass die H3-Positionen auf gleicher Höhe sind */
+  text-align: center;
+}
+
+/* Beschreibung */
+.erfolge-boxen .box p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Hover */
+.erfolge-boxen .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* sichtbar – wenn JS die Klasse .visible hinzufügt */
+.erfolge-boxen .box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
