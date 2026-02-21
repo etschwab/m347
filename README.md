@@ -8,6 +8,6 @@ Die Website bleibt nach Stop/Start verfügbar, weil die Dateien per Volume (Bind
 
 ## Start (Play with Docker / Bewertung)
 ```bash
-git clone https://github.com/<DEIN_GITHUB_USER>/gibbM293.git
+git clone https://github.com/etschwab/m347.git
 cd gibbM293
 docker-compose -f docker-compose/docker-compose.yml up -d
