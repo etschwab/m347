@@ -1,4 +1,4 @@
-# gibbM293 – Webserver (Nginx) mit Docker Compose
+# m347 – Webserver (Nginx) mit Docker Compose - Etienne Schwab
 
 ## Auftrag 1 – Webserver + Website persistent
 Diese Lösung startet einen Nginx-Webserver in einem Docker-Container und liefert die Website-Dateien aus diesem Repository aus.
@@ -9,5 +9,5 @@ Die Website bleibt nach Stop/Start verfügbar, weil die Dateien per Volume (Bind
 ## Start (Play with Docker / Bewertung)
 ```bash
 git clone https://github.com/etschwab/m347.git
-cd gibbM293
+cd m347
 docker-compose -f docker-compose/docker-compose.yml up -d
