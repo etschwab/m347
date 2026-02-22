@@ -8,7 +8,7 @@ Das Projekt kann in Play with Docker mit folgenden Befehlen gestartet werden:
 git clone https://github.com/etschwab/m347.git
 cd m347
 docker-compose -f docker-compose/docker-compose.yml up -d
-```bash
+```
 Nach dem Start ist die Webseite über Port 8080 erreichbar. (http://localhost:8080/)
 
 Technische Umsetzung:
