@@ -3,7 +3,7 @@ Autor: Etienne Schwab
 
 In diesem Projekt wird eine eigene Webseite mit einem Nginx-Webserver in einem Docker-Container betrieben. Die Webseite wird beim Build in das Docker-Image integriert und bleibt auch nach dem Stoppen und erneuten Starten des Containers verfügbar. Ziel ist es, einen Webserver zu installieren, eine Webseite bereitzustellen und das Projekt so aufzubauen, dass es reproduzierbar über Docker Compose gestartet werden kann.
 
-Das Projekt kann in Play with Docker mit folgenden Befehlen gestartet werden:
+Das Projekt kann im Terminal mit folgenden Befehlen gestartet werden:
 ```bash
 git clone https://github.com/etschwab/m347.git
 cd m347
